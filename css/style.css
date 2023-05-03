@@ -1,0 +1,118 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: hsl(30, 38%, 92%);
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  width: 37.5rem;
+  background: hsl(0, 0%, 100%);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 0.625rem;
+}
+.card_illustration img {
+  width: 100%;
+  display: block;
+  border-radius: 0.625rem 0 0 0.625rem;
+}
+.card_main {
+  padding: 1.875rem 2.1875rem;
+}
+
+.product_logo {
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  font-variant: small-caps;
+  letter-spacing: 0.3125rem;
+  font-size: 0.75rem;
+}
+
+.product_title {
+  margin: 1.25rem 0 1.5625rem;
+  font-size: 2.1875rem;
+  font-weight: 900;
+  line-height: 0.9;
+}
+
+.product_description {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.product_price {
+  margin: 1.875rem 0 0;
+  position: relative;
+}
+.product_price .price_now {
+  color: hsl(158, 36%, 37%);
+  font-weight: 900;
+  font-size: 2.187rem;
+}
+.product_price .price_old {
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  font-size: 0.8125rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  position: absolute;
+  top: 25%;
+  right: 15%;
+}
+
+.add_link {
+  display: block;
+  width: 100%;
+  margin: 1.25rem 0 0;
+  padding: 0.9375rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-decoration: none;
+  background: hsl(158, 36%, 37%);
+  color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+  border-radius: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.add_link img {
+  margin: 0 10px 0 0;
+}
+.add_link:hover {
+  background: #1a4031;
+}
+
+@media (max-width: 620px) {
+  .card {
+    width: 90%;
+    grid-template-columns: 100%;
+    margin: auto;
+  }
+  .card_illustration img {
+    border-radius: 0.625rem 0.625rem 0 0;
+  }
+  .card_main {
+    padding: 1.25rem 1.875rem 1.875rem;
+    border-radius: 0 0 0.625rem 0.625rem;
+  }
+  .product_title {
+    margin: 0.625rem 0 1.25rem;
+  }
+  .product_price {
+    margin: 1.25rem 0 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

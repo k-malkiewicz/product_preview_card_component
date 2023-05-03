@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: $bg-body;
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    width: 37.5rem;
+    background: $bg-card-main;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 0.625rem;
+    &_illustration img {
+        width: 100%;
+        display: block;
+        border-radius: 0.625rem 0 0 0.625rem;
+    }
+    &_main {
+        padding: 1.875rem 2.1875rem;
+    }
+}
+
+.product_logo {
+    color: $color-secondary;
+    font-family: $font-stack-primary;
+    font-variant: small-caps;
+    letter-spacing: 0.3125rem;
+    font-size: 0.75rem;
+}
+
+.product_title {
+    margin: 1.25rem 0 1.5625rem;
+    font-size: 2.1875rem;
+    font-weight: 900;
+    line-height: 0.9;
+}
+
+.product_description {
+    font-family: $font-stack-primary;
+    color: $color-secondary;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+.product_price {
+    margin: 1.875rem 0 0;
+    position: relative;
+    .price_now {
+        color: $color-price;
+        font-weight: 900;
+        font-size: 2.187rem;
+    }
+    .price_old {
+        color: $color-secondary;
+        text-decoration: line-through;
+        font-size: 0.8125rem;
+        font-family: $font-stack-primary;
+        font-weight: 600;
+        position: absolute;
+        top: 25%;
+        right: 15%;
+    }
+}
+
+.add_link {
+    display: block;
+    width: 100%;
+    margin: 1.25rem 0 0;
+    padding: 0.9375rem;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    text-decoration: none;
+    background: $bg-add-link;
+    color: $bg-body;
+    font-family: $font-stack-primary;
+    border-radius: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    img {
+        margin: 0 10px 0 0;
+    }
+    &:hover {
+        background: #1a4031;
+    }
+}
